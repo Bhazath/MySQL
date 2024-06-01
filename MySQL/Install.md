@@ -5,7 +5,7 @@
 sudo apt install mysql-server
 ```
 - To setup mysql
-```
+
 ```
 sudo mysql_secure_installation
 ```
