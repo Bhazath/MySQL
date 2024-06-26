@@ -21,7 +21,8 @@ grant all on *.* to 'gost'@'%';  # granting access
 # 
 # 
 
-### 1) Log in to MySQL: Open your terminal or command prompt and log in to the MySQL server.
+## To see all Show user in mysql
+1) Log in to MySQL: Open your terminal or command prompt and log in to the MySQL server.
 
 ```
 mysql -u root -p
