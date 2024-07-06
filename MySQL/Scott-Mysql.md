@@ -21,6 +21,20 @@ CREATE TABLE emp (
     deptno INT(2)
 );
 
+-- Create the dept database
+CREATE TABLE dept (
+    deptno INT PRIMARY KEY,
+    dname VARCHAR(14),
+    loc VARCHAR(13)
+);
+
+-- Establish Foreign Key Constraint
+ALTER TABLE EMP
+ADD CONSTRAINT FK_DEPTNO
+FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO);
+-- inster dept table first and then instert emp table
+
+
 -- Insert data into the emp table
 INSERT INTO emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES
 (7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800.00, NULL, 20),
