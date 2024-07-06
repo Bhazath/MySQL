@@ -39,15 +39,6 @@ INSERT INTO emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES
 (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300.00, NULL, 10);
 ```
 
-# Foreign Key Constraint
-```
--- Establish Foreign Key Constraint
-ALTER TABLE EMP
-ADD CONSTRAINT FK_DEPTNO
-FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO);
--- insert dept table first and then instert emp table
-```
-
 # Dept
 ```
 CREATE TABLE dept (
@@ -68,6 +59,15 @@ VALUES (30, 'SALES', 'CHICAGO');
 
 INSERT INTO dept (deptno, dname, loc)
 VALUES (40, 'OPERATIONS', 'BOSTON');
+```
+
+# Foreign Key Constraint
+```
+-- Establish Foreign Key Constraint
+ALTER TABLE EMP
+ADD CONSTRAINT FK_DEPTNO
+FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO);
+-- insert dept table first and then instert emp table
 ```
 
 # salgrade
