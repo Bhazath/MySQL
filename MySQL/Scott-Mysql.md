@@ -32,7 +32,7 @@ CREATE TABLE dept (
 ALTER TABLE EMP
 ADD CONSTRAINT FK_DEPTNO
 FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO);
--- inster dept table first and then instert emp table
+-- insert dept table first and then instert emp table
 
 
 -- Insert data into the emp table
