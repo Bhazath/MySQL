@@ -1,3 +1,4 @@
+# Oracle Scott
 ```
 -- Log in to MySQL as root
 mysql -u root -p
